@@ -76,7 +76,7 @@ function drawCoronaMap() {
         .title()
         .enabled(true)
         .padding([10, 2, 10, 2])
-        .text('Total Infected:'+ totalInf +  " | Total Deaths:" + totalDeath + " | Total Recovered:" + totalRecov + '\nLast Updated ' + newDate);
+        .text('Total Infected:'+ totalInf +  " | Total Deaths:" + totalDeath + " | Total Recovered:" + totalRecov + '\nLast Updated ' + newDate + "\Due to API changes the data for recovered is not available");
 
 
 
