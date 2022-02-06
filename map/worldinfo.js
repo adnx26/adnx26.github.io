@@ -76,7 +76,7 @@ function drawCoronaMap() {
         .title()
         .enabled(true)
         .padding([10, 2, 10, 2])
-        .text('Total Infected:'+ totalInf +  " | Total Deaths:" + totalDeath + " | Total Recovered:" + totalRecov + '\nLast Updated ' + newDate + " | Due to API changes the data for recovered is not available");
+        .text('Total Infected:'+ totalInf +  " | Total Deaths:" + totalDeath + '\nLast Updated ' + newDate + " | Due to API changes the data for recovered is not available");
 
 
 
@@ -97,7 +97,7 @@ function drawCoronaMap() {
       var series = map.bubble(mapping);
 
       series.labels().format("{%name}");
-      series.tooltip().format("{%size} Infected \n{%deaths} Death \n{%recovered} Recovered ")
+      series.tooltip().format("{%size} Infected \n{%deaths} Deaths")
 
       // set chart bubble settings
       map.minBubbleSize('1%').maxBubbleSize('8%');
